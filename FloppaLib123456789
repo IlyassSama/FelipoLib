@@ -23,7 +23,7 @@ library.theme = {
     titlesize = 18,
     font = Enum.Font.Code,
     background = "rbxassetid://5553946656",
-    tilesize = 1,
+    tilesize = 90,
     cursor = true,
     cursorimg = "https://t0.rbxcdn.com/42f66da98c40252ee151326a82aab51f",
     backgroundcolor = Color3.fromRGB(20, 20, 20),
@@ -760,7 +760,7 @@ function library:CreateWindow(name, size, hidebutton)
                 label.Main.Font = window.theme.font
                 label.Main.Text = text
                 label.Main.TextColor3 = window.theme.itemscolor
-                label.Main.TextSize = 15
+                label.Main.TextSize = 13
                 label.Main.TextStrokeTransparency = 1
                 label.Main.TextXAlignment = Enum.TextXAlignment.Left
                 updateevent.Event:Connect(function(theme)
@@ -796,7 +796,7 @@ function library:CreateWindow(name, size, hidebutton)
                 toggle.Main.Font = Enum.Font.SourceSans
                 toggle.Main.Text = ""
                 toggle.Main.TextColor3 = Color3.fromRGB(0, 0, 0)
-                toggle.Main.TextSize = 15
+                toggle.Main.TextSize = 13
                 updateevent.Event:Connect(function(theme)
                     toggle.Main.BorderColor3 = theme.outlinecolor
                 end)
